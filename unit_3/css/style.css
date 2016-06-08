@@ -15,6 +15,9 @@ h2, h3 {
 #slogan {
 	font-style: italic;
 }
+#contact {
+	font-weight: 600;
+}
 ul {
 	text-decoration: none;
 }

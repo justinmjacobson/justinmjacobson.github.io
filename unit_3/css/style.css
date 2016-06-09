@@ -20,7 +20,7 @@ h3 {
 }
 .sub {
 	border-style: solid;
-    border-width: 2px 0px 2px 0px;
+    border-width: 1px;
 	font-weight: 50;
 	text-align: left;
 }

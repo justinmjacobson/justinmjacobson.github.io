@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:600,400);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
 * {
 	padding: 0;
 	margin: 0;
@@ -18,7 +19,8 @@ h3 {
 	font-weight: 400;
 }
 #slogan {
-	font-style: italic;
+	font-family: 'Droid Serif', serif;
+	font-weight: 700;
 }
 #contact {
 	margin: 20px;

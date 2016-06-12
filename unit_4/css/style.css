@@ -20,11 +20,13 @@ h3 {
 }
 #slogan {
 	font-family: 'Droid Serif', serif;
-	font-weight: 700;
+	font-weight: 400;
+	font-size: 1em;
 }
 #contact {
+	font-family: 'Poppins', sans-serif;
 	margin: 20px;
-	font-weight: 600;
+	font-weight: 400;
 }
 .sub {
 	padding: 5px;

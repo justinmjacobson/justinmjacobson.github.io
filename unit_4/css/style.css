@@ -1,15 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:600,400);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,300);
+
 * {
 	padding: 0;
 	margin: 0;
 }
 body {
-	font-family: 'Poppins', Helvetica, Arial, sans-serif;
-	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px; /*1em = 16px*/
 	color: #222222;
 	line-height: 1.5;
 	text-align: center;
+}
+header {
+	padding: 200px;
 }
 h1 {
 	font-weight: 600;
@@ -21,7 +25,6 @@ h3 {
 #slogan {
 	font-family: 'Droid Serif', serif;
 	font-weight: 400;
-	font-size: 1em;
 }
 #contact {
 	font-family: 'Poppins', sans-serif;

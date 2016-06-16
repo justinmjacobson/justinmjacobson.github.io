@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Racing+Sans+One);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,900);
 
 *{
 	padding: 0;
@@ -21,7 +21,7 @@ nav{
 }
 
 header{
-	padding: 1em auto;
+	padding: 1em 1em;
 	margin: 1em auto;
 }
 
@@ -41,6 +41,8 @@ ul{
 
 a{
 	text-decoration: none;
+	color: #222;
+	font-weight: 500;
 }
 
 img{
@@ -57,26 +59,29 @@ footer{
 	margin: 1em auto;
 }
 
-#head{
-	font-size: 2em;
-	line-height: 1em;
-	font-weight: 900;
-}
-
 .navlinks{
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 100;
-	color: #aaa;
+	color: #333;
 	margin: 10px;
 }
 
 .sub{
-	padding: 5px;
+	padding: 15px;
 	border-style: solid;
     border-width: 1px;
 	font-weight: 500;
 	text-align: left;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+		border-bottom-width: 0;
+	border-color: black;
+}
+
+.border-bottom{
+	border-bottom-width: 1px;
 }
 
 .favorites{
@@ -85,4 +90,10 @@ footer{
 	color: #000;
 	border-bottom: 1px solid #000;
 	padding-bottom: 2px;
+}
+
+#head{
+	font-size: 2em;
+	line-height: 1em;
+	font-weight: 900;
 }

@@ -5,15 +5,18 @@
 <title>Justin Jacobson</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
 <div id="wrapper">
-
   <header>
-    <h1>Justin Jacobson</h1>
+	<h1>Justin Jacobson</h1>
     <h3 id="head">Visual Artist</h3>
+  	<label for="toggle">Menu</label>
+  	<input type="checkbox" id="toggle">
   <nav>
     <a href="#">Home</a>
     <a href="#">Painting</a>
@@ -28,10 +31,10 @@
   <div id="two_column" class="clearfix"> 
   <article id="left">
     <img id="hero" src="images/justin_jacobson.jpg" alt="Drawing of Justin Jacobson" title="Self Portrait">
-    <p>Justin Jacobson is a multidisciplinary visual artist.  His work explores the intersection of identity, archetypes and aesthetics.</p>
+    <p>Justin Jacobson is a multi-disciplinary visual artist. His work explores the intersection of identity, archetypes and aesthetics.</p>
   </article>
   <aside id="right">
-      <h3>Recent &hearts; Favorites</h3>
+      <h3>Recent &hearts; Favorite Things</h3>
       <ul>
       <li> <a class="favorites" href="http://www.michaelwerner.com/artist/sigmar-polke/exhibition/3585/work/3587"> silver nitrate paintings</a></li>
       <li> <a class="favorites" href="https://www.amazon.com/Boardwalk-Empire-Season-1/dp/B006VRDZ44">Boardwalk Empire</a></li>
@@ -40,7 +43,7 @@
       </ul>
   </aside>
   </div>
-  <section id="recent work" class="clearfix">
+  <section id="recent work" class="clearfix expand" >
     <h3 class="sub">Recent Work</h3>
     <div class="image-wrapper">
     <figure class="image">
@@ -49,7 +52,7 @@
     </figure>
     </div>
   </section>
-  <section id="painting">
+  <section id="painting" class="expand">
     <h3 class="sub">Painting</h3>
     <div class="image-wrapper">
     <figure class="image">
@@ -102,7 +105,7 @@
     </figure>
     </div>     
   </section>
-  <section id="drawing">
+  <section id="drawing" class="expand">
     <h3 class="sub">Drawing</h3>
     <div class="image-wrapper">
     <figure class="image">
@@ -119,7 +122,7 @@
     </figure>
     </div>    
   </section>
-  <section id="photography">
+  <section id="photography" class="expand">
     <h3 class="sub">Photography</h3>
     <div class="image-wrapper">
     <figure class="image">
@@ -136,7 +139,7 @@
     </figure>
     </div>
   </section>
-  <section id="video">
+  <section id="video" class="expand">
     <h3 class="sub">Video</h3>
     <div class="image-wrapper">
     <figure class="image">
@@ -145,7 +148,7 @@
     </figure>
     </div>
   </section>
-  <section id="zine">
+  <section id="zine" class="expand">
     <h3 class="sub">Zine</h3>
     <div class="image-wrapper">
     <figure class="image">
@@ -169,5 +172,12 @@
     <p id="copyright">&copy; 2016 Justin Jacobson</p>
   </footer>
   </div>
+  <script>
+  $(document).ready(function(){
+  	$(".expand").click(function(){
+  		$(this).find(".image-wrapper").slideToggle();
+  	});
+  });
+  </script>
 </body>
 </html>

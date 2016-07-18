@@ -102,6 +102,16 @@ figure{
     width: 33%;
 }
 
+label{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    color: #333;
+    margin: 10px;
+    display: none;
+}
+
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -133,8 +143,18 @@ figure{
 
 .image{
     float: left;
-   /* width: 40%;*/
+    width: 33.33%;
    padding: 10px;
+}
+
+.image img{
+    display: block;
+    width: 100%;
+}
+
+.image figcaption{
+    display: block;
+    text-align: center;
 }
 
 .image-wrapper:after {
@@ -146,8 +166,14 @@ figure{
     height: 0;
 }
 
+.image-wrapper{
+    display: none;
+}
+
 #hero{
-    width: 50%;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
 }
 
 #right{
@@ -159,7 +185,7 @@ figure{
 }
 
 #left {
-    text-align: center;
+    text-align: left;
     background-color: #FFF;
     border: 1px black solid;
     padding: 20px;
@@ -183,3 +209,52 @@ figure{
     border: 1px black solid;
     padding: 20px;
 }
+
+#toggle{
+    display:none;
+}
+
+@media screen and (max-width: 1060px){
+    .image{
+        width: 50%;
+
+
+}
+
+@media screen and (max-width: 800px){
+    .image{
+        float: none;
+        width: 100%;
+        height: auto;
+}
+}
+
+@media screen and (max-width: 630px){
+    nav{
+    display: none;
+    }
+    nav a{
+    display: block;
+    padding: 10px; 
+    margin: 5px;
+}
+    label{
+    display: block;
+    text-align: center;
+    }
+
+    #toggle:checked + nav{
+        display: block;
+    }
+
+    #left {
+    padding: 10px;
+    width: 100%;
+}
+    #right{
+    width: 100%;
+    margin: auto;
+}
+}
+
+

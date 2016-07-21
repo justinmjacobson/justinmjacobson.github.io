@@ -145,6 +145,7 @@ label{
     float: left;
     width: 33.33%;
    padding: 10px;
+   display: block;
 }
 
 .image img{
@@ -168,6 +169,12 @@ label{
 
 .image-wrapper{
     display: none;
+}
+.fancybox-close{
+    opacity: 0;
+}
+.fancybox-skin:hover .fancybox-close{
+    opacity: 1;
 }
 
 #hero{
@@ -226,7 +233,13 @@ label{
         float: none;
         width: 100%;
         height: auto;
-}
+    }
+    .fancybox-close{
+        opacity: 1;
+    }
+    .fancybox-skin:hover .fancybox-close{
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 630px){
@@ -255,6 +268,8 @@ label{
     width: 100%;
     margin: auto;
 }
+
 }
+
 
 
